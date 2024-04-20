@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 10px;
+}
+
+.container-one {
+    background-color: #151f28;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-one
+.item-one {
+    border: 1px solid #5c6670;
+    /* flex-basis: 600px; */
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px
+}
+
+.container-one
+.item-one
+.circle,
+.rectoval {
+    border: 2.9px solid #75808a;
+    margin: 10px;
+    background-color: #2b333b;
+    align-self: center;
+}
+
+.container-one
+.item-one
+.circle {
+    /* border: 1px solid #5c6670; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.container-one
+.item-one
+.circle.one {
+    background-color: red;
+}
+
+.container-one
+.item-one
+.circle.two {
+    background-color: blue;
+}
+
+.container-one
+.item-one
+.rectoval {
+    /* border: 1px solid #5c6670; */
+    height: 30px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    border-radius: 20px 20px 20px 20px
+}
+
+.container-one
+.item-two {
+    /* border: 1px solid #5c6670; */
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.container-one
+.item-two
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: 1000;
+}
