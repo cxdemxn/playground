@@ -173,7 +173,6 @@ svg:hover
 
 .showcase
 {
-    height: 700px;
     background-image: url(img/bg-img1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg-img1.jpg);
 
@@ -210,6 +209,7 @@ div.text
     align-items: flex-start;
     color: #ffffffd8;
     flex-grow: 1;
+    margin-bottom: 20px;
 }
 
 div.text
@@ -419,11 +419,6 @@ a.btn:hover
         background-color: #fffcfc3f;
     }
 
-    .showcase
-    {
-        height: 600px;
-    }
-
     div.text
     {
         align-items: center;
@@ -433,13 +428,13 @@ a.btn:hover
     h1.item
     {
         align-self: center;
-        font-size: 46px;
+        font-size: 40px;
     }
 
     div.text
     h2
     {
-        font-size: 34px;
+        font-size: 30px;
         text-align: center;   
     }
 
@@ -449,12 +444,12 @@ a.btn:hover
         font-size: 16px;
         text-align: center;   
         padding-bottom: 0;
-        margin-bottom: 20px;
     }
 
     div.text
     a.btn
     {
+        margin-top: 20px;
         justify-self: flex-end;
     }
 
