@@ -381,7 +381,7 @@ div.three:hover i
     flex-direction: column;
     align-items: center;
     align-self: center;
-    padding: 60px 10px;
+    padding: 30px 10px 60px;
 }
 
 .container-flex
@@ -396,7 +396,7 @@ div.three:hover i
 {
     background-color: #0f766e;
     width: 200px;
-    height: 2px;
+    height: 3px;
     margin: 20px 0;
 }
 
@@ -417,7 +417,8 @@ div.three:hover i
     padding: 10px;
     border-radius: 15px;
     font-size: 22px;
-    
+    margin-top: 10px;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
 
 .card > *
@@ -462,6 +463,17 @@ p
 }
 
 
+.review:hover
+.review-bar
+{
+    box-shadow: 0px 0px 10px rgb(37, 212, 201);
+}
+
+.card:hover
+{
+    /* box-shadow: 20px 10px 20px rgb(0, 0, 0); */
+    
+}
 
 
 
@@ -691,6 +703,36 @@ p
         font-size: 16px;
         padding: 10px;
         /* flex: 1 1 auto; */
+    }
+
+
+    /* review */
+    .review
+    .container-flex
+    {
+        padding: 30px 10px;
+    }
+
+    .card-flex
+    {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card
+    {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .stars
+    {
+        /* border: 1px solid; */
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
     }
 
 }
