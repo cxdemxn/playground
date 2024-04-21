@@ -390,6 +390,7 @@ div.three:hover i
     font-size: 32px;
     color: #c5c3c3;
     margin: 10px 0 0px 0;
+    text-align: center;
 }
 
 .review-bar
@@ -618,6 +619,7 @@ p
         /* background-color: red; */
     }
 
+    /* nav */
     .nav-list-flex
     a,
     a.mode svg
@@ -645,6 +647,13 @@ p
     .fa-bars:hover
     {
         background-color: #fffcfc3f;
+    }
+
+
+    /* showcase */
+    .showcase
+    {
+        border-radius: initial;
     }
 
     div.text
@@ -680,14 +689,14 @@ p
         margin-top: 20px;
         justify-self: flex-end;
     }
-
-
     
     .side-img
     {
         display: none;
     }
 
+
+    /* infosec */
     .infosec
     .container-flex
     {
