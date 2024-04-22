@@ -343,7 +343,7 @@ div.three h3
 {
     margin-top: 50px;
     margin-bottom: 0;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 div.one:hover i, 
@@ -387,10 +387,19 @@ div.three:hover i
 .container-flex
 .review-header
 {
-    font-size: 32px;
+    font-size: 30px;
     color: #c5c3c3;
     margin: 10px 0 0px 0;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.bar
+{
+    background-color: #0f766e;
+    width: 200px;
+    height: 3px;
+    margin: 20px 0;
 }
 
 .review-bar
@@ -399,6 +408,11 @@ div.three:hover i
     width: 200px;
     height: 3px;
     margin: 20px 0;
+}
+
+.emoji
+{
+    color: red;
 }
 
 .card-flex
@@ -417,7 +431,7 @@ div.three:hover i
     max-width: 30%;
     padding: 10px;
     border-radius: 15px;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 10px;
     box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
@@ -430,7 +444,7 @@ div.three:hover i
 .card
 .item
 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -445,6 +459,7 @@ i
 h3
 {
     color: #c5c3c3;
+    font-size: 25px;
 }
 
 .card
@@ -452,6 +467,7 @@ p
 {
     color: #a2bbdb;
     line-height: 30px;
+
     
 }
 
@@ -483,6 +499,114 @@ p
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* LEGACY */
+.legacy
+.container-flex
+{
+    /* border: 1px solid; */
+    display: flex;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.main
+{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 70px 0;
+}
+
+.main-flex
+{
+    /* border: 1px solid; */
+    font-size: 27px;
+    max-width: 500px;
+    padding-right: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #c5c3c3;
+}
+
+.main-flex
+.legacy-bar
+{
+    max-width: 80px;
+}
+
+.side
+{
+    /* border: 1px solid; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.side
+.info
+{
+    /* border: 1px solid; */
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info
+.fa-star
+{
+    font-size: 40px;
+    color: #0f766e;
+}
+
+.side
+.text
+{
+    /* border: 1px solid; */
+    margin-bottom: 0px;
+    padding-left: 20px;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.side
+.text
+h3
+{
+    /* border: 1px solid; */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.legacy:hover
+.bar
+{
+    box-shadow: 0px 0px 10px rgb(37, 212, 201);
+}
+
+.info:hover
+.fa-star
+{
+    text-shadow: 0px 0px 10px rgb(15, 82, 77);
+}
 
 
 
@@ -744,4 +868,135 @@ p
         justify-content: space-around;
     }
 
+
+
+    /* legacy */
+    .legacy
+    .container-flex
+    {
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .main
+    {
+        /* border: 1px solid; */
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .main-flex
+    {
+        /* border: 1px solid; */
+        max-width: 100%;
+        padding: 0;
+        flex: 1;
+    }
+
+    .side
+    {
+        /* border: 1px solid; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info
+    .fa-star
+    {
+        /* border: 1px solid; */
+        /* display: flex;
+        flex-direction: column; /s
+        align-items: center; */
+    }
+
+    .side
+    .info
+    {
+        /* border: 1px solid; */
+        /* flex-direction: column; */ /* s */
+    }
+
+    .side
+    .text
+    {
+        /* border: 1px solid; */
+        /* flex-direction: row; */
+        padding-left: 10px;
+    }
+
+    .side
+    .text
+    h3
+    {
+        /* border: 1px solid; */
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .side
+    .text
+    p
+    {
+        /* border: 1px solid; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: justify;
+    }
+
+}
+
+
+@media screen and (max-width: 480px)
+{
+    .container
+    {
+        /* background-color: red; */
+    }
+
+    .main
+    {
+        margin: 10px 0;
+    }
+
+    .main-flex
+    {
+        font-size: 20px;
+    }
+
+    .info
+    .fa-star
+    {
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .side
+    .info
+    {
+        /* border: 1px solid; */
+        flex-direction: column; 
+    }
+
+    .side
+    .text
+    h3
+    {
+        /* border: 1px solid; */
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .side
+    .text
+    p
+    {
+        text-align: center;
+    }
 }
