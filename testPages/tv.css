@@ -79,7 +79,10 @@ li
     /* flex-wrap: wrap; */
 }
 
-
+.bar
+{
+    border-radius: 50px;
+}
 
 
 
@@ -684,6 +687,7 @@ h3
     /* margin-right: 20px; */
     /* font-size: 20px; */
     text-transform: capitalize;
+    margin-bottom: 5px;
 }
 
 .detail-card
@@ -698,6 +702,12 @@ li
 {
     border-bottom: 1px solid;
     margin-bottom: 12px;
+}
+
+.curriculum
+.container-flex:hover .curri-bar
+{
+    box-shadow: 0px 0px 10px rgb(37, 212, 201);
 }
 
 .haba
@@ -717,6 +727,58 @@ li a.hover:hover
 
 
 
+
+
+
+footer
+.container-flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-flex
+.socials
+{
+    /* border: 1px solid; */
+    display: flex;
+}
+
+.socials
+.circle
+{
+    /* border: 1px solid; */
+    margin: 10px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5c3c3;
+    color: red;
+}
+
+.circle
+i
+{
+    color: black;
+}
+
+.socials
+.circle:hover 
+{
+    background-color: #0e635c;
+    box-shadow: 0px 0px 5px rgb(37, 212, 201);
+}
+
+.socials
+.circle:hover i
+{
+    color: #c5c3c3;
+}
 
 
 
@@ -1123,5 +1185,13 @@ li a.hover:hover
     .head
     {
         margin-top: 10px;
+    }
+
+    .socials
+    .circle
+    {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
     }
 }
