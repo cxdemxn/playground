@@ -28,6 +28,36 @@ nav
     border-bottom: 1px solid;
 }
 
+p
+{
+    font-size: 20px;
+    font-family: 'poppinsregular', sans-serif;
+    /* font-family: 'amaranthregular', sans-serif; */
+    /* font-family: 'josefin_slabregular', sans-serif; */
+    line-height: 35px;
+}
+
+h1
+{
+    font-size: 60px;
+    margin-top: 70px;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+h3
+{
+    font-size: 25px;
+}
+
+i.medium
+{
+    font-size: 40px;
+}
+
 .container
 {
     /* border: 1px solid; */
@@ -80,7 +110,6 @@ a
     font-family: 'after_shokregular', '3dumbregular', 'amaranthregular', serif;
     display: flex;
     align-items: center;
-    font-size: 25px;
     color: #fff;
     
 }
@@ -108,7 +137,6 @@ a
 {
     /* border: 1px solid; */
     padding: 4px 4px 0px 4px;
-    font-size: 18px;
     margin: 0 5px;
     display: flex;
 }
@@ -236,21 +264,6 @@ h1.item
     padding: 0 0 0 15px;
     /* border: 1px solid; */
     align-self: flex-start;
-    font-size: 52px
-}
-
-div.text
-h2
-{
-    /* border: 1px solid; */
-    font-size: 42px;
-}
-
-div.text
-p
-{
-    /* border: 1px solid; */
-    font-size: 22px;
 }
 
 div.text
@@ -317,7 +330,6 @@ div
     align-items: center;
     text-align: center;
     max-width: 30%;
-    font-size: 22px;
     padding: 10px;
 }
 
@@ -334,7 +346,6 @@ div.two i,
 div.three i
 {
     color: #0f766e;
-    font-size: 45px;
 }
 
 div.one h3, 
@@ -343,7 +354,6 @@ div.three h3
 {
     margin-top: 50px;
     margin-bottom: 0;
-    font-size: 30px;
 }
 
 div.one:hover i, 
@@ -369,12 +379,6 @@ div.three:hover i
 }
 
 .review
-.container
-{
-    /* display: flex; */
-}
-
-.review
 .container-flex
 {
     display: flex;
@@ -387,7 +391,6 @@ div.three:hover i
 .container-flex
 .review-header
 {
-    font-size: 30px;
     color: #c5c3c3;
     margin: 10px 0 0px 0;
     text-align: center;
@@ -431,14 +434,8 @@ div.three:hover i
     max-width: 30%;
     padding: 10px;
     border-radius: 15px;
-    font-size: 18px;
     margin-top: 10px;
     box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
-}
-
-.card > *
-{
-    /* border: 1px solid; */
 }
 
 .card
@@ -459,7 +456,6 @@ i
 h3
 {
     color: #c5c3c3;
-    font-size: 25px;
 }
 
 .card
@@ -467,8 +463,7 @@ p
 {
     color: #a2bbdb;
     line-height: 30px;
-
-    
+    font-size: 14px;    
 }
 
 .card
@@ -484,12 +479,6 @@ p
 .review-bar
 {
     box-shadow: 0px 0px 10px rgb(37, 212, 201);
-}
-
-.card:hover
-{
-    /* box-shadow: 20px 10px 20px rgb(0, 0, 0); */
-    
 }
 
 
@@ -535,7 +524,6 @@ p
 .main-flex
 {
     /* border: 1px solid; */
-    font-size: 27px;
     max-width: 500px;
     padding-right: 50px;
     flex: 1;
@@ -572,7 +560,6 @@ p
 .info
 .fa-star
 {
-    font-size: 40px;
     color: #0f766e;
 }
 
@@ -593,7 +580,6 @@ h3
     /* border: 1px solid; */
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-size: 30px;
 }
 
 .legacy:hover
@@ -663,21 +649,6 @@ h3
         padding: 0 0 0 17px;
         /* border: 1px solid; */
         align-self: flex-start;
-        font-size: 50px
-    }
-
-    div.text
-    h2
-    {
-        /* border: 1px solid; */
-        font-size: 40px;
-    }
-
-    div.text
-    p
-    {
-        /* border: 1px solid; */
-        font-size: 20px;
     }
 }
 
@@ -695,14 +666,8 @@ h3
     {
         font-family: 'after_shokregular', '3dumbregular', 'amaranthregular', serif;
         color: #fff; 
-        font-size: 20px;
     }
 
-    .nav-list-flex
-    a
-    {
-        font-size: 16px;
-    }
 
     div.text
     .item
@@ -719,7 +684,6 @@ h3
     {
         /* border: 1px solid; */
         align-self: flex-start;
-        font-size: 52px;
         padding: 0;
     }
 
@@ -736,6 +700,7 @@ h3
     *
     {
         /* border: 1px solid; */
+
     }
 
     .container
@@ -761,7 +726,6 @@ h3
     .fa-bars
     {
         display:block;
-        font-size: 20px;
         padding: 10px;
         border-radius: 5px;
         color: #c5c3c3;
@@ -789,20 +753,17 @@ h3
     h1.item
     {
         align-self: center;
-        font-size: 40px;
     }
 
     div.text
     h2
     {
-        font-size: 30px;
         text-align: center;   
     }
 
     div.text
     p
     {
-        font-size: 16px;
         text-align: center;   
         padding-bottom: 0;
     }
@@ -833,7 +794,6 @@ h3
     div
     {
         max-width: 100%;
-        font-size: 16px;
         padding: 10px;
         /* flex: 1 1 auto; */
     }
@@ -855,7 +815,6 @@ h3
     .card
     {
         max-width: 100%;
-        font-size: 16px;
         padding: 10px;
         margin-bottom: 20px;
     }
@@ -877,11 +836,13 @@ h3
         /* border: 1px solid; */
         display: flex;
         flex-direction: column;
-        padding: 25px;
+        padding: 0px 25px 25px 25px;
     }
 
     .main
     {
+        margin-top: 0px;
+        margin-bottom: 30px;
         /* border: 1px solid; */
         flex-direction: row;
         justify-content: flex-start;
@@ -891,32 +852,15 @@ h3
     {
         /* border: 1px solid; */
         max-width: 100%;
-        padding: 0;
         flex: 1;
     }
-
+    
     .side
     {
         /* border: 1px solid; */
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
-
-    .info
-    .fa-star
-    {
-        /* border: 1px solid; */
-        /* display: flex;
-        flex-direction: column; /s
-        align-items: center; */
-    }
-
-    .side
-    .info
-    {
-        /* border: 1px solid; */
-        /* flex-direction: column; */ /* s */
     }
 
     .side
@@ -933,7 +877,6 @@ h3
     {
         /* border: 1px solid; */
         width: 100%;
-        font-size: 25px;
     }
 
     .side
@@ -953,6 +896,26 @@ h3
 
 @media screen and (max-width: 480px)
 {
+    h1
+    {
+        font-size: 40px;
+    }
+
+    h2
+    {
+        font-size: 28px;
+    }
+
+    h3
+    {
+        font-size: 20px;
+    }
+
+    p
+    {
+        font-size: 16px;
+    }
+
     .container
     {
         /* background-color: red; */
@@ -961,11 +924,6 @@ h3
     .main
     {
         margin: 10px 0;
-    }
-
-    .main-flex
-    {
-        font-size: 20px;
     }
 
     .info
