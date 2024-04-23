@@ -28,7 +28,7 @@ nav
     border-bottom: 1px solid;
 }
 
-p
+p, li
 {
     font-size: 20px;
     font-family: 'poppinsregular', sans-serif;
@@ -57,6 +57,12 @@ i.medium
 {
     font-size: 40px;
 }
+
+li
+{
+    list-style: none;
+}
+
 
 .container
 {
@@ -174,10 +180,10 @@ a:hover, a:active
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-.nav-list-flex
+/* .nav-list-flex */
 a.hover:hover
 {
-    border-bottom: 2px solid silver;
+    border-bottom: 2px solid #9e9e9e;
     color: #fff;
 }
 
@@ -209,7 +215,6 @@ svg:hover
 /* SHOWCASE */
 .showcase
 {
-    background-image: url(img/bg-img1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg-img1.jpg);
 
     background-position: center middle;
@@ -218,7 +223,7 @@ svg:hover
     /* border: 1px solid; */
     display: flex;
     border-radius: 0 0 220px 0;
-    background-color: #181a1b;
+    background-color: #01221f;
 }
 
 .showcase
@@ -593,6 +598,138 @@ h3
 {
     text-shadow: 0px 0px 10px rgb(15, 82, 77);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.curriculum
+{
+    background-color: #01221f;
+}
+
+.curriculum
+.container-flex
+{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+}
+
+.container-flex
+.curri-header
+{
+    /* border: 1px solid; */
+    padding-left: 30px;
+}
+
+.curri-header
+.bar
+{
+    max-width: 20%;
+}
+
+.curriculum
+.container-flex
+h2
+{
+    text-transform: capitalize;
+    color: #c5c3c3;
+    margin: 10px 0 0px 0;
+    /* text-align: center; */
+}
+
+
+.container-flex
+.details
+{
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.detail-card
+{
+    /* border: 1px solid; */
+    flex: 1;
+    /* width: 100%; */
+    padding: 0 30px;
+}
+
+.detail-card
+.head
+{
+    /* border: 1px solid; */
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 80px;
+}
+
+.detail-card
+h3
+{
+    /* border: 1px solid; */
+    /* margin-right: 20px; */
+    /* font-size: 20px; */
+    text-transform: capitalize;
+}
+
+.detail-card
+.bar
+{
+    max-width: 50px;
+    margin: 0;
+}
+
+.haba
+li
+{
+    border-bottom: 1px solid;
+    margin-bottom: 12px;
+}
+
+.haba
+li a.hover:hover
+{
+    border-bottom: none;
+}
+
+.haba:hover .bar
+{
+    box-shadow: 0px 0px 10px rgb(37, 212, 201);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
