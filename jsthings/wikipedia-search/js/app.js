@@ -35,3 +35,12 @@ const search = (searchTerm) => {
     }, 500);
 }
 
+const debounce = (fn, delay=500) => {
+    let timeOutId;
+    return (...args) => {
+        clearTimeout(timeOutId);
+        timeOutId = setTimeout(() => {
+            fn.apply(this, args);
+        }, delay);
+    }
+}
