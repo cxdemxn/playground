@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/overview-pills.css">
+    <link rel="stylesheet" href="css/overview-search.css">
+    <link rel="stylesheet" href="/playground/fa-fonts/css/all.min.css">
+
+    <script src="js/tasks.js" defer></script>
+    <script src="js/overlay.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>TOO-LIST</title>
+</head>
+<body>
+    <div class="container">
+            <section class="overview-container " style="display: non;">
+                <div class="huba">
+                    <div class="logo overview-divisor top-bar side">
+                        <div class="circle-container">
+                            <div class="circle circle1"></div>
+                            <div class="circle circle2"></div>
+                            <div class="circle circle3"></div>
+                        </div>
+    
+                        <!-- <i class="fa-solid fa-x"></i> -->
+                    </div>
+    
+                    <!-- SEARCH BAR -->
+                    <div class="overview-search-flex overview-divisor " id="searchParent">
+                            <input type="text" name="" id=""  placeholder="Search" class="searchChild">
+                            <div class="search-icon">
+                                <i class=" fa-solid fa-search searchChild"></i>
+                            </div>
+                    </div>
+    
+    
+                    <!-- PILL SECTION -->
+                    <div class="pill-container-flex overview-divisor">
+                        <div class="pill-set">
+                            <div class="pill pill-today main-content">
+                                <div class="pill-top">
+                                    <div class="pill-icon calendar-icon">
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">5</div>
+                                </div>
+                                <div class="pill-text">
+                                    Today
+                                </div>
+                            </div>
+    
+                            <div class="pill pill-scheduled main-content" id="scheduled">
+                                <div class="pill-top">
+                                    <div class="pill-icon scheduled-icon">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">16</div>
+                                </div>
+                                <div class="pill-text">
+                                    Scheduled
+                                </div>
+                            </div>
+                        
+    
+    
+                            <div class="pill pill-family main-content">
+                                <div class="pill-top">
+                                    <div class="pill-icon people-roof-icon">
+                                        <i class="fa-solid fa-people-roof"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">9</div>
+                                </div>
+                                <div class="pill-text">
+                                    Family Tasks
+                                </div>
+                            </div>
+    
+                            <div class="pill pill-all main-content">
+                                <div class="pill-top">
+                                    <div class="pill-icon inbox-icon">
+                                        <i class="fa-solid fa-inbox"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">79</div>
+                                </div>
+                                <div class="pill-text">
+                                    All
+                                </div>
+                            </div>
+    
+    
+                            <div class="pill pill-flagged main-content" id="flagged">
+                                <div class="pill-top">
+                                    <div class="pill-icon flag-icon">
+                                        <i class="fa-solid fa-flag"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">3</div>
+                                </div>
+                                <div class="pill-text">
+                                    Flagged
+                                </div>
+                            </div>
+    
+                            <div class="pill pill-completed main-content">
+                                <div class="pill-top">
+                                    <div class="pill-icon check-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+    
+                                    <div class="pill-counter"></div>
+                                </div>
+                                <div class="pill-text">
+                                    Completed
+                                </div>
+                            </div>
+    
+    
+                            <div class="pill pill-assigned main-content">
+                                <div class="pill-top">
+                                    <div class="pill-icon user-icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">1</div>
+                                </div>
+                                <div class="pill-text">
+                                    Assigned
+                                </div>
+                            </div>
+    
+                            <div class="pill pill-work main-content">
+                                <div class="pill-top">
+                                    <div class="pill-icon star-icon">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+    
+                                    <div class="pill-counter">5</div>
+                                </div>
+                                <div class="pill-text">
+                                    Work
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <!-- LIST SECTION -->
+                    <div class="list-container-flex overview-divisor">
+                        <div class="list-head">
+                            <p>my lists</p>
+                        </div>
+                        <ul class="list-body">
+                            <li class="list-item">
+                                <div class="list-item-head">
+                                    <div class="list-item-icon">
+                                        <i class="fa-solid fa-thumbtack"></i>
+                                    </div>
+                                    <div class="list-item-name">
+                                        Reminders
+                                    </div>
+                                </div>
+                                <div class="list-item-count">
+                                    6 
+                                </div>
+                            </li>
+                            <li class="list-item main-content" id="camping-trip">
+                                <div class="list-item-head">
+                                    <div class="list-item-icon">
+                                        <i class="fa-solid fa-tent"></i>
+                                    </div>
+                                    <div class="list-item-name">
+                                        Camping Trip Expedition
+                                    </div>
+                                </div>
+                                <div class="list-item-count">
+                                    6
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="add-list-container" id="overlay">
+                        <i class="fa-regular fa-square-plus"></i>
+                    <div class="add-list-text">
+                        Add List
+                    </div>
+                </button>
+            </section>
+        
+
+        <section class="main-container" style="display: non;">
+
+        </section>
+
+        <div class="overlay-container"></div>
+
+    </div>
+</body>
+</html>
