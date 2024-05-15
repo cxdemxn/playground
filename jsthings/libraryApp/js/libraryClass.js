@@ -303,7 +303,7 @@ const book3 = new Book(1912, 'Leon', 'Kit De Waal', 2001);
 
 
 
-const library = new Library();
+let library = new Library();
 library.addBook(book1);
 library.addBook(book2);
 library.addBook(book3);
@@ -321,7 +321,12 @@ library.borrowBook(patron2, book2.title);
 horizont('LIBRARY DETAILS');
 log(library);
 
+library = JSON.parse(localStorage.getItem('library2'));
+console.log(library);
+
 // localStorage.setItem('library2', JSON.stringify(library));
+
+
 
 const jsonString = JSON.stringify(book1);
 const jString = JSON.stringify(book2);
@@ -337,10 +342,10 @@ printPatrons();
 
 function printBook() {
 
-    console.table(library.allBooks)
+    console.table(library._books)
 }
 function printPatrons() {
-    console.table(library.allPatrons, ['_firstName', '_lastName', '_age', '_libraryId']);
+    console.table(library._patrons, ['_firstName', '_lastName', '_age', '_libraryId']);
 }
 
 // log(Object.values(book1));
