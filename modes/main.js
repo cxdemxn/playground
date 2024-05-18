@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.documentElement.className = 'light';
+});
+
 function setTheme() {
     const root = document.documentElement;
     const newTheme = root.className === 'dark' ? 'light' : 'dark';

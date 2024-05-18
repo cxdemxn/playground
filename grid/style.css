@@ -1,0 +1,12 @@
+.container {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.container > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

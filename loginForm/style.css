@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --root-font-size: clamp(1rem, 1.5vw + 0.3vh, 1.33rem);
+    --logo-font-size: clamp(1rem, 4vw + 0.3vh, 5rem);
+    --logo-image-size: clamp(3rem, 6vw + 0.3vh, 7rem);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    font-size: var(--root-font-size);
+}
+    
+.logo-section {
+    /* flex-shrink: 1.3; */
+    background-image: url(img/logoBg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: min(50vw, 420px);
+    position: relative;
+}
+
+.logo-container {
+    font-family: 'norsebold';
+    font-size: var(--logo-font-size);
+    color: #fff;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 19%;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.logo-image {
+    height: var(--logo-image-size);
+    width: auto;
+}
+
+.signup-section {
+    background-color: #f9fafb;
+}
+
+
+.signup-form {
+    flex: 1 0 40%;
+}

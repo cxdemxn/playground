@@ -1,3 +1,7 @@
+:root {
+    --form-control-disabled: #959495;
+}
+
 :root.dark {
     --border-btn: 1px solid rgb(220, 220, 220);
     --color-base-bg: rgb(18, 18, 18);
@@ -10,6 +14,26 @@
     --color-base-bg: rgb(240, 240, 240);
     --color-base-text: rgb(18, 18, 18);
     --color-btn-bg: rgb(220, 200, 200);
+    --theme-name: "light";
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border-btn: 1px solid rgb(220, 220, 220);
+        --color-base-bg: rgb(18, 18, 18);
+        --color-base-text: rgb(240, 240, 240);
+        --color-btn-bg: rgb(36, 36, 36);
+        --theme-name: "dark";
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 200, 200);
+    --theme-name: "light";
+    }
 }
 
 body,
@@ -19,6 +43,7 @@ body,
 
 body {
     background-color: var(--color-base-bg);
+    color: var(--color-base-text);
     padding: 10px;
 }
 
@@ -45,4 +70,68 @@ p {
 
 .theme-toggle:focus {
     outline: var(--border-btn);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    /* background-color: #fff; */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.11em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.form-control + .form-control {
+    margin-top: 1em;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em currentColor;
+    background-color: CanvasText;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+    outline: max(1px, 0.1em) solid currentColor;
+    outline-offset: max(2px, 0.1em);
+}
+
+.form-control--disabled,
+input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
 }
