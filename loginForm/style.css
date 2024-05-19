@@ -215,8 +215,8 @@ body {
 
     .signup-top {
         background-image: url(img/logoBg.jpg);
-        /* background-size: cover; */
-        /* background-position: center top; */
+        background-size: cover;
+        background-position: center top;
     }
 }
 
