@@ -133,6 +133,7 @@ body {
     padding: 0.9vh;
     border-radius: 5px;
     border: 1px solid #e3e3e3;
+    font-size: 16px;
 }
 
 .signup-label .invalid {
