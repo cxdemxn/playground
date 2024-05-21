@@ -53,7 +53,7 @@
 
 html,
 body {
-    background-color: darkgreen;
+    background-color: var(--signup-bg-color);
 }
 
 
