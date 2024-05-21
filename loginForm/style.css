@@ -51,6 +51,11 @@
     }
 }
 
+html,
+body {
+    background-color: darkgreen;
+}
+
 
 body {
     display: flex;
@@ -340,8 +345,8 @@ button[type="submit"]:disabled:hover {
     :root {
         --input-margin: 3%;
         --em-one-color: #dfd9d9;
-        --signup-top-padding-1: 2vh;
-        --signup-top-padding-2: 2vh;
+        --signup-top-padding-1: 4vh;
+        --signup-top-padding-2: 4vh;
     }
     
     .logo-section {
