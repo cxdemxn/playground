@@ -6,6 +6,7 @@ const email = document.querySelector('#email');
 const phoneNumber = document.querySelector('#phoneNumber');
 const password = document.querySelector('#signupPassword');
 const confirmPassword = document.querySelector('#confirmPassword');
+const submitBtn = document.querySelector('#submitBtn');
 
 
 firstName.addEventListener('blur', validateFirstName);
@@ -14,6 +15,69 @@ email.addEventListener('blur', validateEmail);
 phoneNumber.addEventListener('blur', validatePhone);
 password.addEventListener('blur', validatePassword);
 confirmPassword.addEventListener('blur', reValidatePassword);
+
+firstName.addEventListener('input', () => {
+    verifyInput(firstName, firstName.value.length < 3 || firstName.value.length === 0, '#firstNameError');
+});
+
+lastName.addEventListener('input', () => {
+    verifyInput(lastName, lastName.value.length < 3 || lastName.value.length === 0, '#lastNameError');
+});
+
+email.addEventListener('input', () => {
+    const testMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    verifyInput(email, !testMail.test(email.value) || email.value.length === 0, '#emailError');
+});
+
+
+
+function verifyInput(inputName, condition, errorRef) {
+    if (condition) {
+        inputName.classList.remove('valid');
+        return false;
+    }
+    
+    inputName.classList.add('valid');
+    document.querySelector(`${errorRef}`).style.display = 'none';
+    return true;
+}
+
+
+password.addEventListener('input', () => {
+//    if (validatePassword()) {
+//     confirmPassword.disabled = false;
+//     confirmPassword.classList.remove('form-control-disabled');
+//     confirmPassword.parentElement.classList.remove('form-control-disabled');
+//     } else {
+//         confirmPassword.disabled = true;
+//         confirmPassword.classList.add('form-control-disabled');
+//         confirmPassword.parentElement.classList.add('form-control-disabled');
+    
+
+//     }
+
+   if (verifyInput(password, password.value.length < 8, '#passwordError')) {
+        confirmPassword.disabled = false;
+        confirmPassword.classList.remove('form-control-disabled');
+        confirmPassword.parentElement.classList.remove('form-control-disabled');
+    } else {
+        confirmPassword.disabled = true;
+        confirmPassword.classList.add('form-control-disabled');
+        confirmPassword.parentElement.classList.add('form-control-disabled');
+    }
+
+});
+
+confirmPassword.addEventListener('input', () => {
+    if (reValidatePassword()) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('form-control-disabled');
+
+     } else {
+         submitBtn.disabled = true;
+         submitBtn.classList.add('form-control-disabled');
+     }
+ });
 
 
 signupForm.addEventListener('submit', (event) => {
@@ -36,7 +100,8 @@ signupForm.addEventListener('submit', (event) => {
         return;
     }
 
-    alert('you have created an account successfully!')
+    alert('you have created an account successfully!');
+    this.reset();
 });
 
 
@@ -145,21 +210,22 @@ function validatePassword() {
         return false;
     }
 
-    if (password.value.length < 5) {
+    if (password.value.length < 8) {
         isValid = false;
         password.classList.add('invalid');
         password.classList.remove('valid');
+        console.log('here');
         document.querySelector('#passwordError').style.display = 'block';
     } else {
         password.classList.remove('invalid');
         document.querySelector('#passwordError').style.display = 'none';
     }
 
-    if (password.value.length > 4) {
-        password.classList.add('valid');
-        password.classList.remove('invalid');
+    // if (password.value.length > 4) {
+    //     password.classList.add('valid');
+    //     password.classList.remove('invalid');
 
-    }
+    // }
 
     return isValid;
 }
@@ -215,3 +281,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setRealViewportHeight();
     window.addEventListener('resize', setRealViewportHeight);
 });
+
+window.addEventListener('load', () => {
+    confirmPassword.disabled = true;
+    submitBtn.disabled = true;
+    // firstName.focus();
+})

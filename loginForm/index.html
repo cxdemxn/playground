@@ -1,99 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/stylesheet.css">
-    
+
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/solid.min.css">
 
-    
+
     <script src="app.js" defer></script>
     <title>Login Form</title>
 </head>
+
 <body>
-        <section class="logo-section">
-            <!-- <img src="img/logoBg.jpg" alt="" class="logo-bg-image"> -->
+    <div class="logo-section">
+        <section class="logo-section-screen ">
             <div class="logo-container">
                 <img src="img/odinLogo.PNG" alt="" class="logo-image">
                 <p class="logo-text">odin</p>
             </div>
         </section>
-    
-        <section class="signup-section">
-            <div class="container">
-                <div class="coerce-container">
-                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
-                    <p>You <em>know</em> you want to.</p>
+
+    </div>
+
+    <section class="signup-section">
+        <div class="small-device-signup-top">
+            <div class=" signup-top">
+                <div class="signup-top-screen container">
+                    <div class="coerce-container">
+                        <p>This is not a real online service! You know you need something like this in your life to help you
+                            realize your deepest dreams. Sign up <em class="diff-em-one">now</em> to get started</p>
+                        <p>You <em class="diff-em-two">know</em> you want to.</p>
+                    </div>
                 </div>
             </div>
-            
-            <form action="" id="signup-form">
-                    <div class="signup-form-bg">
-                        <fieldset class="container signup-fieldset">
-                            <div class="signup-fieldset-caption">Let's do this!</div>
-            
-                            <div class="signup-inputs">
-                                <label for="firstName" class="signup-label">
-                                    First Name
-                                    <input type="text" name="firstName" id="firstName" required>
-                                    <div class="error-container">
-                                        <p class="error-msg" id="firstNameError"><i class="fa-solid fa-exclamation error-icon"></i> First name must be at least 3 characters</p>
-                                    </div>
-                                </label>
-                
-                                <label for="lastName" class="signup-label">
-                                    Last Name
-                                    <input type="text" name="lastName" id="lastName" required>
-                                    <div class="error-container">
-                                        <p class="error-msg" id="lastNameError"><i class="fa-solid fa-exclamation error-icon"></i> Last name must be at least 3 characters</p>
-                                    </div>
-                                </label>
-                
-                                <label for="email" class="signup-label">
-                                    Email
-                                    <input type="email" name="email" id="email" required>
-                                    <div class="error-container">
-                                        <p class="error-msg" id="emailError"><i class="fa-solid fa-exclamation error-icon"></i> Enter a valid email please</p>
-                                    </div>
-                                </label>
-                
-                                <label for="phoneNumber" class="signup-label">
-                                    Phone Number
-                                    <input type="tel" name="phoneNumber" id="phoneNumber" required>
-                                </label>
-                
-                                <label for="signupPassword" class="signup-label">
-                                    Password
-                                    <input type="password" name="signupPassword" id="signupPassword" required>
-                                    <div class="error-container">
-                                        <p class="error-msg" id="passwordError"><i class="fa-solid fa-exclamation error-icon"></i> Password must be at least 8 characters long and include an uppercase, a digit and a special character</p>
-                                    </div>
-                                </label>
-                
-                                <label for="confirmPassword" class="signup-label">
-                                    Confirm Password
-                                    <input type="password" name="confirmPassword" id="confirmPassword" required>
-                                    <div class="error-container">
-                                        <p class="error-msg" id="confirmPasswordError"><i class="fa-solid fa-exclamation error-icon"></i> Passwords do not match</p>
-                                    </div>
-                                </label>
+        </div>
+
+        <form action="" id="signup-form">
+            <div class="signup-form-bg">
+                <fieldset class="container signup-fieldset">
+                    <div class="signup-fieldset-caption">Let's do this!</div>
+
+                    <div class="signup-inputs">
+                        <label for="firstName" class="signup-label">
+                            First Name
+                            <input type="text" name="firstName" id="firstName" required placeholder="John">
+                            <div class="error-container">
+                                <p class="error-msg" id="firstNameError"><i
+                                        class="fa-solid fa-exclamation error-icon"></i> First name must be at least 3
+                                    characters</p>
                             </div>
-                        </fieldset>
+                        </label>
+
+                        <label for="lastName" class="signup-label">
+                            Last Name
+                            <input type="text" name="lastName" id="lastName" required placeholder="Smith">
+                            <div class="error-container">
+                                <p class="error-msg" id="lastNameError"><i
+                                        class="fa-solid fa-exclamation error-icon"></i> Last name must be at least 3
+                                    characters</p>
+                            </div>
+                        </label>
+
+                        <label for="email" class="signup-label">
+                            Email
+                            <input type="email" name="email" id="email" required placeholder="example@email.com">
+                            <div class="error-container">
+                                <p class="error-msg" id="emailError"><i class="fa-solid fa-exclamation error-icon"></i>
+                                    Enter a valid email please</p>
+                            </div>
+                        </label>
+
+                        <label for="phoneNumber" class="signup-label">
+                            Phone Number
+                            <input type="tel" name="phoneNumber" id="phoneNumber" required placeholder="+2348141871591">
+                        </label>
+
+                        <label for="signupPassword" class="signup-label">
+                            Password
+                            <input type="password" name="signupPassword" id="signupPassword" required
+                                placeholder="••••••••">
+                            <div class="error-container">
+                                <p class="error-msg" id="passwordError"><i
+                                        class="fa-solid fa-exclamation error-icon"></i> Password must be at least 8
+                                    characters long and include an uppercase, a digit and a special character</p>
+                            </div>
+                        </label>
+
+                        <label for="confirmPassword" class="signup-label form-control-disabled">
+                            Confirm Password
+                            <input type="password" name="confirmPassword" class="form-control-disabled"
+                                id="confirmPassword" required placeholder="••••••••" disabled>
+                            <div class="error-container">
+                                <p class="error-msg" id="confirmPasswordError"><i
+                                        class="fa-solid fa-exclamation error-icon"></i> Passwords do not match</p>
+                            </div>
+                        </label>
                     </div>
-    
-                    <div class="container signup-bottom">
-                        <button type="submit">
-                            Create Account
-                        </button>
-        
-                        <p class="login-option">
-                            Already have an account? <span class="login">Log in</span>
-                        </p>
-                    </div>
-                </form>
-        </section>
+                </fieldset>
+            </div>
+
+            <div class="container signup-bottom">
+                <button type="submit" class="form-control-disabled disabled-extra" id="submitBtn" disabled>
+                    Create Account
+                </button>
+
+                <p class="login-option">
+                    Already have an account? <span class="login">Log in</span>
+                </p>
+            </div>
+        </form>
+    </section>
 </body>
+
 </html>
