@@ -312,7 +312,7 @@ button[type="submit"]:disabled:hover {
 @media (min-width: 321px) and (max-width: 681px) {
     :root {
         --root-font-size: 12px;
-        --input-padding: 0.2vh;
+        --input-padding: 0.1vh;
         --box-shadow: 0px 5px 8px -7px #000;
         --signup-btn-submit: .5rem;
     }
