@@ -347,22 +347,14 @@ button[type="submit"]:disabled:hover {
     }
 
     .coerce-container {
-<<<<<<< HEAD
-        color: #ccc9c9ec;
-=======
         margin-top: 3rem;
         /* color: #e3e3e3; */
         color: #f9fafb;
->>>>>>> 0221b69521757b11c621d2f285c76cd8b3ce1e84
     }
 
     .signup-top {
         background-image: url(img/logoBg.jpg);
         background-size: cover;
-<<<<<<< HEAD
-        background-position:   center top;
-        /* background-position:   bottom left; */
-=======
         background-position: center top;
     }
 }
@@ -397,7 +389,6 @@ button[type="submit"]:disabled:hover {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     html {
->>>>>>> 0221b69521757b11c621d2f285c76cd8b3ce1e84
         background-color: red;
         margin-bottom: 0;
     }
