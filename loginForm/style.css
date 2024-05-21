@@ -188,6 +188,7 @@ body {
     padding: var(--input-padding);
     border-radius: 6px;
     border: 1px solid #e3e3e3;
+    font-size: 16px;
 }
 
 .signup-label > input:focus {
@@ -346,14 +347,57 @@ button[type="submit"]:disabled:hover {
     }
 
     .coerce-container {
+<<<<<<< HEAD
         color: #ccc9c9ec;
+=======
+        margin-top: 3rem;
+        /* color: #e3e3e3; */
+        color: #f9fafb;
+>>>>>>> 0221b69521757b11c621d2f285c76cd8b3ce1e84
     }
 
     .signup-top {
         background-image: url(img/logoBg.jpg);
         background-size: cover;
+<<<<<<< HEAD
         background-position:   center top;
         /* background-position:   bottom left; */
+=======
+        background-position: center top;
+    }
+}
+
+@media (max-height: 575.98px) {
+    /* Your styles here */
+    body {
+        /* flex-direction: column; */
+        height: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Your styles here */
+    body {
+        /* flex-direction: column; */
+        height: 100%;
+    }
+
+}
+
+@media (min-height: 576px) and (max-height: 767.98px) {
+    /* Your styles here */
+    body {
+        /* flex-direction: column; */
+        height: 100%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+>>>>>>> 0221b69521757b11c621d2f285c76cd8b3ce1e84
         background-color: red;
         margin-bottom: 0;
     }
