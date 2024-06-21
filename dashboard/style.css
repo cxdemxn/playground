@@ -4,5 +4,14 @@
 
 .icon {
     height: 30px;
-    width: 30px;
+    /* width: 30px; */
+}
+
+.pfp-small {
+    border-radius: 50%;
+    height: 50px;
+}
+.pfp-mid {
+    border-radius: 50%;
+    height: 70px;
 }
