@@ -1,4 +1,8 @@
-svg, .icon {
+* {
+    /* border: 1px solid; */
+}
+
+.icon {
     height: 30px;
     width: 30px;
 }
