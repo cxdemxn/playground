@@ -1,17 +1,269 @@
 * {
     /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'robotoregular';
+}
+
+li {
+    list-style: none;
 }
 
 .icon {
     height: 30px;
-    /* width: 30px; */
+}
+
+.dash-icon {
+    fill: white;
 }
 
 .pfp-small {
     border-radius: 50%;
-    height: 50px;
+    height: 40px;
 }
 .pfp-mid {
     border-radius: 50%;
-    height: 70px;
+    height: 60px;
+}
+
+.bold {
+    font-family: 'robotobold';
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+    row-gap: 10px;
+    padding: 1rem 2rem;
+}
+
+.header > * {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.search-field {
+    width: 85%;
+    gap: .7rem
+}
+
+.search-field button {
+    display: flex;
+    border: none;
+    background-color: #fff;
+}
+
+.search-field .icon {
+    height: 1.5rem;
+}
+
+.search-field input {
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 1.7rem;
+}
+
+.account-control, .post-actions {
+    justify-self: end;
+}
+
+.account-control li {
+    display: flex;
+}
+
+.account-control-option .icon  {
+    height: 1.5rem;
+}
+
+.welcome-text {
+    display: grid;
+    gap: 5px;
+}
+
+.welcome-text p:first-child {
+    font-size: .75rem;
+}
+
+.welcome-text p:last-child {
+    font-size: 1.25rem;
+}
+
+.post-actions li {
+    background-color: #1992d4;
+    color: #fff;
+    font-family: 'robotobold';
+    width: 6rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 0.87rem;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #1992d4;
+    color: white;
+    display: grid;
+    gap: 3rem;
+    font-family: 'robotobold';
+    font-weight: normal;
+}
+
+.logo {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 10px;
+}
+
+
+.logo-icon {
+    height: 2.5rem;
+}
+
+.user-nav, 
+.system-nav {
+    /* background-color: red; */
+    display: grid;
+    gap: .9rem;
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.1rem;
+    gap: 1.5rem;
+}
+
+.nav-option svg {
+    height: 1.4rem;
+}
+
+.main-section {
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem 4rem;
+}
+
+.title {
+    font-family: 'robotoregular';
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.posts {
+    grid-row: 1 / 4;
+}
+
+.posts-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.post-card {
+    background-color: #fff;
+    padding: 1.9rem 1rem 1.5rem 1.5rem;
+    display: grid;
+    border-left: .5rem solid orange;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #9c9a9a;
+    /* width: 320px; */
+}
+
+.post-options {
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
+    gap: 1.9rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
+.post-options .icon {
+    display: flex;
+    height: 1.5rem;
+}
+
+.post-written > * {
+    /* border: 1px solid; */
+}
+
+.post-written {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-written .post-body,
+.highlight-body,
+.trend-info p:nth-child(2) {
+    color: #5e5c5c;
+    text-align: left;
+}
+
+.asides {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+hr {
+    /* color: #9c9a9a; */
+    border-color: #fff;
+}
+
+.announcement-card,
+.trending-card {
+    background-color: #fff;
+    padding: 1.1rem 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #9c9a9a;
+}
+
+.highlight {
+    margin: 1rem .5rem;
+}
+
+.highlight-title {
+    font-family: 'robotobold';
+    /* font-weight: bolder; */
+    font-size: .8rem;
+}
+
+.highlight-body,
+.trend-info p:nth-child(2) {
+    font-size: 0.8rem;
+}
+
+.trending-card {
+    display: grid;
+    gap: 2rem;
+}
+
+.trend {
+    display: flex;
+    gap: 1rem;
+}
+
+.trend-info p:nth-child(2) {
+    
 }
