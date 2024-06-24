@@ -35,13 +35,21 @@ li {
     font-family: 'robotobold';
 }
 
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
 
 .header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-items: start;
-    row-gap: 10px;
+    row-gap: 2rem;
     padding: 1rem 2rem;
+    /* background-color: red; */
+    grid-column: 2 / -1;
+    padding-left: 2rem;
 }
 
 .header > * {
@@ -73,8 +81,14 @@ li {
     height: 1.7rem;
 }
 
+
 .account-control, .post-actions {
     justify-self: end;
+    padding-right: 2rem;
+}
+
+.account-control {
+    padding-right: 4rem;
 }
 
 .account-control li {
@@ -120,6 +134,10 @@ li {
     gap: 3rem;
     font-family: 'robotobold';
     font-weight: normal;
+    grid-row: 1 / 3;
+    align-content: start;
+    padding: 1rem 2rem;
+    grid-template-rows: auto auto 1fr;
 }
 
 .logo {
@@ -145,7 +163,6 @@ li {
 .nav-option {
     display: flex;
     align-items: center;
-
     font-size: 1.1rem;
     gap: 1.5rem;
 }
@@ -154,24 +171,27 @@ li {
     height: 1.4rem;
 }
 
+.system-nav {
+    align-self: flex-end;
+}
+
+
+/* MAIN-SECTION */
 .main-section {
     background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
-    padding: 2rem 1rem 4rem;
+    padding: 2rem 2rem 1rem;
 }
 
 .title {
     font-family: 'robotoregular';
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-.posts {
-    grid-row: 1 / 4;
-}
 
 .posts-grid-container {
     display: grid;
@@ -204,10 +224,6 @@ li {
     height: 1.5rem;
 }
 
-.post-written > * {
-    /* border: 1px solid; */
-}
-
 .post-written {
     display: flex;
     flex-direction: column;
@@ -223,7 +239,7 @@ li {
 .asides {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 3rem;
 }
 
 hr {
@@ -262,8 +278,4 @@ hr {
 .trend {
     display: flex;
     gap: 1rem;
-}
-
-.trend-info p:nth-child(2) {
-    
 }
